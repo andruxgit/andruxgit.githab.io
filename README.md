@@ -1,2 +1,2 @@
-# portfolioSite.githab.io
+# andruxgit.githab.io
 academiaStudy
