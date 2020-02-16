@@ -1,17 +1,25 @@
-// html{
-    
-//     &_promo{
-//         color: #fff;
-//     }
-// }
+html,body{
+   position: relative;
+   font-family: 'Museo Sans Cyrl';
+   color: #000;
+   background-color: #fff;
+ 
+}
 
-// @import "media";
-// @import "mixin";
-// @import "/blocks/first_block";
-// @import "variables";
+@import "variables";
+@import "mixin";
+@import "blocks/first";
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/title";
+@import "blocks/services";
 
+
+
+
+@import "media";
 h1{
-    color:green;
+    // color:green;
     font-family: 'Museo Sans Cyrl';
 }
 

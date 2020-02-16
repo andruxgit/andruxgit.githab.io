@@ -1,0 +1,27 @@
+.title{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    span{
+        color: $text-color;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0;
+        border-bottom: 3px solid $event-color;
+    }
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 160px;
+        height: 3px;
+        background-color: $event-color;
+        top: 100%;
+        left: -160px;
+
+    }
+
+}
