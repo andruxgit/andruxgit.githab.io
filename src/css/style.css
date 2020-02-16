@@ -4,12 +4,62 @@ html, body {
   color: #000;
   background-color: #fff; }
 
-html {
-  color: #000; }
+.title {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  color: #404044;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0;
+  border-bottom: 3px solid #01b3c6; }
+  .title span {
+    color: #404044;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0;
+    border-bottom: 3px solid #01b3c6; }
+  .title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 160px;
+    height: 3px;
+    background-color: #01b3c6;
+    top: 100%;
+    left: -160px; }
+
+.title-right {
+  transform: translate(650%, 200%); }
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 530px; }
+  .item__img {
+    height: auto;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 5px #01b3c6; }
+  .item__descr {
+    color: #404044;
+    line-height: 22px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-weight: 400; }
 
 .header {
   width: 100%;
-  height: 87px;
+  height: 50px;
   position: fixed;
   margin: 0 auto;
   left: 50%;
@@ -22,7 +72,8 @@ html {
   .header__logo img {
     display: block;
     max-width: 100%;
-    margin: 10px auto;
+    height: 49px;
+    margin: auto;
     letter-spacing: 1px; }
   .header .header-nav {
     display: block; }
@@ -32,16 +83,17 @@ html {
       align-items: center;
       justify-content: space-between;
       list-style-type: none;
-      padding: 10px 0;
-      margin: 0; }
+      margin: 0;
+      padding: 0;
+      margin-top: 5px; }
       .header .header-nav__list :nth-child(1)::after {
         display: none; }
     .header .header-nav__list-info {
       box-shadow: none !important; }
       .header .header-nav__list-info a {
-        font-weight: 400 !important;
-        font-size: 14px !important;
-        font-weight: 400 !important; }
+        color: #01b3c6 !important;
+        font-weight: 700 !important;
+        font-size: 16px !important; }
     .header .header-nav__item {
       position: relative;
       padding: 0px 10px; }
@@ -103,32 +155,36 @@ html {
     letter-spacing: 2.9px;
     text-shadow: 4px -1px 18px #000, 4px -1px 4px #01b3c6; }
 
-.title {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  display: block;
-  margin: 0 auto; }
-  .title span {
-    color: #404044;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0;
-    border-bottom: 3px solid #01b3c6; }
-  .title::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 160px;
-    height: 3px;
-    background-color: #01b3c6;
-    top: 100%;
-    left: -160px; }
-
 .services {
-  min-height: 600px;
-  padding-top: 65px; }
+  max-height: 800px;
+  padding-top: 75px;
+  padding-bottom: 60px; }
+  .services__item {
+    margin-top: 39px; }
+
+.about {
+  min-height: 650px; }
+  .about__title {
+    position: relative;
+    z-index: 100; }
+  .about__img {
+    max-width: 100%;
+    height: 660px;
+    position: relative;
+    z-index: 0; }
+  .about__text p:nth-of-type(1) {
+    color: #404044;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    margin-top: 150px;
+    padding-right: 135px; }
+  .about__text p:nth-of-type(2) {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.4px;
+    padding-right: 135px; }
 
 h1 {
   font-family: 'Museo Sans Cyrl'; }

@@ -8,11 +8,15 @@ html,body{
 
 @import "variables";
 @import "mixin";
-@import "blocks/first";
+
+@import "blocks/title";
+@import "blocks/item";
+
+// @import "blocks/first";
 @import "blocks/header";
 @import "blocks/promo";
-@import "blocks/title";
 @import "blocks/services";
+@import "blocks/about";
 
 
 

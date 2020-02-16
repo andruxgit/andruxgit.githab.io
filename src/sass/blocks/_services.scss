@@ -1,5 +1,9 @@
 .services{
-    min-height: 600px;
-    padding-top: 65px;
+    max-height: 800px;
+    padding-top: 75px;
+    padding-bottom: 60px;
+    &__item{
+        margin-top: 39px;  
+    }
 
 }
