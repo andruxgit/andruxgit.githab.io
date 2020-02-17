@@ -1,0 +1,47 @@
+.ability {
+    min-height: 400px;
+    padding: 50px 0 30px 0;
+
+    &__title {
+
+    }
+
+    &__item {
+        flex-direction: row;
+        align-items: start;
+        min-height: 265px;
+        margin-top: 38px;
+
+        .item__icon img {
+            width: 90px;
+            height: 90px;
+            padding: 10px;
+        }
+
+        .item__title {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 2em;
+            letter-spacing: 1.2px;
+        }
+
+        .item__descr {
+            padding: 0px 10px;
+            text-align: left;
+        }
+
+        .item__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+    }
+    &__img{
+        max-height: 500px;
+    }
+
+
+}

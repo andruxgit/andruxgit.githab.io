@@ -1,0 +1,31 @@
+.numbers{
+    min-height: 300px;
+    padding: 90px 0;
+    background-color: rgb(55, 55, 66);
+    &__numbers-item{
+        color: #fff;
+    }
+    .numbers-item{
+        &__wrapp{
+            display: flex;
+            justify-content: center;
+        }
+        &__icon{
+            width: 100px;
+            height: 100px;
+        }
+        &__num{
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 1em;
+            padding: 10px;
+        }
+        &__descr{
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2.9px;
+            text-align: right;
+        }
+    }
+}

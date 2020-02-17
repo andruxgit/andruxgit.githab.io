@@ -1,5 +1,6 @@
 .about {
     min-height: 900px;
+    background-color: #E8FFFF;
 
     &__title {
         position: relative;
@@ -7,7 +8,10 @@
     }
 
     &__img {
-        max-width: 100%;
+        top: 0;
+        left: -40px;
+        position: absolute;
+        max-height: 400px;
         position: relative;
         z-index: 0;
         box-shadow: 0 0 5px #01b3c6;
@@ -86,29 +90,6 @@
 
     }
 
-    .item {
-        &__icon {
-            position: relative;
-            z-index: 100;
-            height: 80px;
-            width: 80px;
-            font-size: 52px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
 
-        &__title {
-            position: relative;
-            z-index: 100;
-        }
-
-        &__descr {
-            color:#fff;
-            position: relative;
-            z-index: 100;
-        }
-    }
 
 }
