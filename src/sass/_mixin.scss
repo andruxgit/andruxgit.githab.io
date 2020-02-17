@@ -1,0 +1,5 @@
+@mixin shadow-block($color){
+    border-radius: 10px;
+    box-shadow: -5px 2px 16px $color;
+   
+  }

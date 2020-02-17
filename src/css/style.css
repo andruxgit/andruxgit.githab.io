@@ -23,6 +23,8 @@ html, body {
     line-height: normal;
     letter-spacing: 0;
     border-bottom: 3px solid #01b3c6; }
+    .title span span {
+      color: #01b3c6; }
   .title::after {
     content: "";
     display: block;
@@ -155,23 +157,36 @@ html, body {
     letter-spacing: 2.9px;
     text-shadow: 4px -1px 18px #000, 4px -1px 4px #01b3c6; }
 
+@media screen and (max-width: 960px) {
+  .promo {
+    min-height: 650px; }
+    .promo__wrapp {
+      margin-top: 150px; }
+    .promo__title {
+      font-size: 100px; }
+    .promo__subtitle {
+      font-size: 75px; }
+    .promo__descr {
+      margin-top: 43px;
+      font-size: 24px; } }
+
 .services {
-  max-height: 800px;
+  min-height: 800px;
   padding-top: 75px;
   padding-bottom: 60px; }
   .services__item {
     margin-top: 39px; }
 
 .about {
-  min-height: 650px; }
+  min-height: 900px; }
   .about__title {
     position: relative;
     z-index: 100; }
   .about__img {
     max-width: 100%;
-    height: 660px;
     position: relative;
-    z-index: 0; }
+    z-index: 0;
+    box-shadow: 0 0 5px #01b3c6; }
   .about__text p:nth-of-type(1) {
     color: #404044;
     font-size: 16px;
@@ -185,6 +200,28 @@ html, body {
     line-height: 25px;
     letter-spacing: 0.4px;
     padding-right: 135px; }
+  .about__item {
+    margin-top: 50px;
+    padding: 15px;
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center; }
+    .about__item:nth-child(1) {
+      color: #fff;
+      background-color: #f3796e;
+      border-radius: 10px;
+      box-shadow: -5px 2px 16px #f3796e; }
+  .about .about-item__icon {
+    height: 80px;
+    width: 80px;
+    font-size: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 h1 {
   font-family: 'Museo Sans Cyrl'; }

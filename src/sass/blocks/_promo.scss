@@ -43,3 +43,27 @@
     }
 
 }
+@media screen and (max-width: 960px)
+{
+    .promo{
+        min-height: 650px;
+     
+        &__wrapp{
+            margin-top: 150px;
+        }
+        &__title{
+       
+            font-size: 100px;
+        }  
+        &__subtitle{
+       
+            font-size: 75px;
+        }
+        &__descr{
+            margin-top: 43px;
+            font-size: 24px;
+
+        }
+    
+    }
+}

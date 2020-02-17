@@ -18,6 +18,9 @@
         line-height: normal;
         letter-spacing: 0;
         border-bottom: 3px solid $event-color;
+        span{
+            color: $event-color
+        }
     }
     &::after{
         content: "";
