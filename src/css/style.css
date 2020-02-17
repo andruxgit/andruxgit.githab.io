@@ -157,19 +157,6 @@ html, body {
     letter-spacing: 2.9px;
     text-shadow: 4px -1px 18px #000, 4px -1px 4px #01b3c6; }
 
-@media screen and (max-width: 960px) {
-  .promo {
-    min-height: 650px; }
-    .promo__wrapp {
-      margin-top: 150px; }
-    .promo__title {
-      font-size: 100px; }
-    .promo__subtitle {
-      font-size: 75px; }
-    .promo__descr {
-      margin-top: 43px;
-      font-size: 24px; } }
-
 .services {
   min-height: 800px;
   padding-top: 75px;
@@ -201,6 +188,9 @@ html, body {
     letter-spacing: 0.4px;
     padding-right: 135px; }
   .about__item {
+    color: #fff;
+    position: relative;
+    z-index: 2;
     margin-top: 50px;
     padding: 15px;
     width: 100%;
@@ -209,19 +199,70 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    text-align: center; }
-    .about__item:nth-child(1) {
-      color: #fff;
-      background-color: #f3796e;
-      border-radius: 10px;
-      box-shadow: -5px 2px 16px #f3796e; }
-  .about .about-item__icon {
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 600px auto;
+    box-shadow: 0 0 5px #01b3c6;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.29), 0 8px 8px rgba(0, 0, 0, 0.22);
+    border-radius: 15px !important; }
+    .about__item .item__overlay {
+      border-radius: 5px; }
+    .about__item-1 {
+      background-image: url(../../img/about/about_1.jpg); }
+      .about__item-1 .item__overlay {
+        background-color: rgba(243, 121, 110, 0.8); }
+    .about__item-2 {
+      background-image: url(../../img/about/about_2.jpg); }
+      .about__item-2 .item__overlay {
+        background-color: rgba(249, 54, 223, 0.8); }
+    .about__item-3 {
+      background-image: url(../../img/about/about_3.jpeg); }
+      .about__item-3 .item__overlay {
+        background-color: rgba(33, 196, 180, 0.8); }
+    .about__item .item__overlay {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .about .item__icon {
+    position: relative;
+    z-index: 100;
     height: 80px;
     width: 80px;
     font-size: 52px;
     display: flex;
     justify-content: center;
     align-items: center; }
+  .about .item__title {
+    position: relative;
+    z-index: 100; }
+  .about .item__descr {
+    color: #fff;
+    position: relative;
+    z-index: 100; }
 
-h1 {
-  font-family: 'Museo Sans Cyrl'; }
+@media screen and (max-width: 960px) {
+  .promo {
+    min-height: 650px; }
+    .promo__wrapp {
+      margin-top: 150px; }
+    .promo__title {
+      font-size: 100px; }
+    .promo__subtitle {
+      font-size: 75px; }
+    .promo__descr {
+      margin-top: 43px;
+      font-size: 24px; }
+  .title-right {
+    transform: translate(65%, -56%); }
+  .about .about__text p:nth-of-type(1) {
+    margin-top: 50px;
+    padding-right: 10px; }
+  .about .about__text p:nth-of-type(2) {
+    margin-top: 10px;
+    padding-right: 10px; }
+  .item {
+    min-height: 383px; } }

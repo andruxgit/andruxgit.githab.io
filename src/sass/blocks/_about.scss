@@ -1,17 +1,20 @@
-.about{
+.about {
     min-height: 900px;
-    &__title{
-        position: relative;   
+
+    &__title {
+        position: relative;
         z-index: 100;
     }
-    &__img{
+
+    &__img {
         max-width: 100%;
         position: relative;
         z-index: 0;
         box-shadow: 0 0 5px #01b3c6;
     }
-    &__text{
-        p:nth-of-type(1){
+
+    &__text {
+        p:nth-of-type(1) {
             color: $text-color;
             font-size: 16px;
             line-height: 25px;
@@ -19,7 +22,8 @@
             margin-top: 150px;
             padding-right: 135px;
         }
-        p:nth-of-type(2){
+
+        p:nth-of-type(2) {
             font-size: 16px;
             font-weight: 700;
             line-height: 25px;
@@ -28,7 +32,10 @@
         }
     }
 
-    &__item{
+    &__item {
+        color:#fff;
+        position: relative;
+        z-index: 2;
         margin-top: 50px;
         padding: 15px;
         width: 100%;
@@ -38,30 +45,70 @@
         align-items: center;
         justify-content: space-between;
         text-align: center;
-        &:nth-child(1){
-            color: #fff;
-            background-color: #f3796e;
-            @include shadow-block(#f3796e);
-    }
-    }
-    .about-item{
-     
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 600px auto;
+        box-shadow: 0 0 5px #01b3c6;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.29), 0 8px 8px rgba(0,0,0,0.22);
+        border-radius: 15px!important;
+        .item__overlay{
+            border-radius: 5px;
+        }
+        &-1{
+            background-image: url(../../img/about/about_1.jpg);
+            .item__overlay {
+                background-color: rgba(243, 121, 110, 0.8);
+             } 
+             
+        }
+        &-2{
+            background-image: url(../../img/about/about_2.jpg);
+            .item__overlay {
+                background-color: rgba(249, 54, 223, 0.8);
+            } 
+        }
+        &-3{
+            background-image: url(../../img/about/about_3.jpeg);
+            .item__overlay {
+            //    background-color: rgba(144, 236, 227, 0.8);
+               background-color: rgba(33, 196, 180, 0.8);
 
-        &__icon{
+            } 
+        }
+        .item__overlay {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+    .item {
+        &__icon {
+            position: relative;
+            z-index: 100;
             height: 80px;
             width: 80px;
             font-size: 52px;
             display: flex;
             justify-content: center;
             align-items: center;
-
+            
         }
-        &__title{
 
+        &__title {
+            position: relative;
+            z-index: 100;
         }
-        &__descr{
 
+        &__descr {
+            color:#fff;
+            position: relative;
+            z-index: 100;
         }
     }
-   
+
 }
