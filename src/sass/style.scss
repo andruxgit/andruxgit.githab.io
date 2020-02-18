@@ -6,6 +6,9 @@ html,body{
    overflow-X: hidden;
  
 }
+.container{
+   position: relative;
+}
 
 @import "variables";
 @import "mixin";
@@ -21,6 +24,10 @@ html,body{
 @import "blocks/ability";
 @import "blocks/numbers";
 @import "blocks/portfolio";
+@import "blocks/command";
+@import "blocks/item-persona";
+@import "blocks/footer";
+
 
 
 

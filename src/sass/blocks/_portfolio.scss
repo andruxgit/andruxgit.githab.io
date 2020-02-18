@@ -60,6 +60,18 @@
 
     }
 }
+// .no-touch &:hover,
+// 	.touch &:active {
+// 		//стили элемента при наведении мыши или таче пальцем
+// 	}
+.portfolio .item-link__overlay:hover,
+.portfolio .item-link__overlay:active{
+    background: rgba(255,255,255, 0.5);
+
+    .item-link__button{
+        opacity: 1;
+    }
+}
 
 
 

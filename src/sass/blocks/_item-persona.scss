@@ -1,0 +1,53 @@
+.item-persona{
+    display: flex;
+    width: 100%;
+    max-height: 450px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    @include shadow-block($second-color);
+    overflow: hidden;
+    &__img{
+        width: 100%;
+    }
+    &__img img{
+        width: 100%;
+    }
+    &__content{
+        text-align: center;
+
+    }
+    &__title{
+        font-size: 20px;
+    }
+    &__descr{
+        margin: 15px auto;
+        font-size: 14px;
+    }
+   
+}
+#persona-1{
+    background-color: $second-color;
+    @include shadow-block($second-color);
+}
+
+#persona-2{
+    background-color: $color-3;
+    @include shadow-block($color-3);
+}
+#persona-3{
+    background-color: $color-4;
+    @include shadow-block($color-4);
+}
+#persona-4{
+    background-color: $color-5;
+    @include shadow-block($color-5);
+}
+#persona-5{
+    background-color: $color-6;
+    @include shadow-block($color-6);
+}
