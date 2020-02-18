@@ -1,8 +1,9 @@
 html,body{
    position: relative;
    font-family: 'Museo Sans Cyrl';
-   color: #000;
+   // color: #000;
    background-color: #fff;
+   overflow-X: hidden;
  
 }
 
@@ -19,6 +20,7 @@ html,body{
 @import "blocks/about";
 @import "blocks/ability";
 @import "blocks/numbers";
+@import "blocks/portfolio";
 
 
 
